@@ -16,61 +16,39 @@
 			<dict>
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
+				<key>DeleteUnused</key>
+				<true/>
 				<key>FixHPET</key>
-				<true/>
+				<false/>
 				<key>FixIPIC</key>
-				<true/>
+				<false/>
 				<key>FixMutex</key>
 				<true/>
 				<key>FixRTC</key>
+				<false/>
+				<key>FixRegions</key>
 				<true/>
 				<key>FixShutdown</key>
-				<true/>
+				<false/>
 				<key>FixTMR</key>
-				<true/>
+				<false/>
 			</dict>
+			<key>Name</key>
+			<string>DSDT.aml</string>
 			<key>Patches</key>
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change _OSI to XOSI</string>
+					<string>change GFX0 to IGPU</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X09TSQ==
+					R0ZYMA==
 					</data>
 					<key>Replace</key>
 					<data>
-					WE9TSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _DSM to XDSM</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WERTTQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					U0FUMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					U0FUQQ==
+					SUdQVQ==
 					</data>
 				</dict>
 				<dict>
@@ -103,26 +81,36 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
+					<string>change SAT0 to SATA</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					R0ZYMA==
+					U0FUMA==
 					</data>
 					<key>Replace</key>
 					<data>
-					SUdQVQ==
+					U0FUQQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change H_EC to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SF9FQw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
 					</data>
 				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
 		<array>
-			<dict>
-				<key>Signature</key>
-				<string>#MCFG</string>
-			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
@@ -136,6 +124,8 @@
 		</array>
 		<key>FixHeaders</key>
 		<true/>
+		<key>FixMCFG</key>
+		<true/>
 		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>
@@ -145,24 +135,30 @@
 			<key>Generate</key>
 			<dict>
 				<key>PluginType</key>
-				<true/>
+				<false/>
 			</dict>
+			<key>NoDynamicExtract</key>
+			<true/>
 			<key>NoOemTableId</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>lilucpu=9</string>
+		<string>lilucpu=9 dart=0 debug=0x100</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
+		<key>NeverDoRecovery</key>
+		<true/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
 		<integer>0</integer>
+		<key>XMPDetection</key>
+		<string>Yes</string>
 	</dict>
 	<key>Comment</key>
 	<string>This file is for HP 17-by (8th Gen, KabyLake-R)</string>
@@ -170,14 +166,20 @@
 	<dict>
 		<key>Audio</key>
 		<dict>
+			<key>AFGLowPowerState</key>
+			<true/>
 			<key>Inject</key>
 			<integer>13</integer>
+			<key>ResetHDA</key>
+			<true/>
 		</dict>
 		<key>FakeID</key>
 		<dict>
 			<key>#IntelGFX</key>
 			<string>0x19128086</string>
 		</dict>
+		<key>LANInjection</key>
+		<true/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
@@ -190,23 +192,33 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AAAWGQ==</data>
+				<data>
+				AAAWGQ==
+				</data>
 				<key>device-id</key>
-				<data>FhkAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<integer>1</integer>
+				<data>
+				FhkAAA==
+				</data>
 				<key>framebuffer-con1-alldata</key>
-				<data>AQUJAAAIAACHAQAA</data>
-				<key>framebuffer-con2-enable</key>
+				<data>
+				AQUJAAAIAACHAQAA
+				</data>
+				<key>framebuffer-con1-enable</key>
 				<integer>1</integer>
 				<key>framebuffer-con2-alldata</key>
 				<string>&lt;02040a00 00080000 87010000&gt;</string>
+				<key>framebuffer-con2-enable</key>
+				<integer>1</integer>
 				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
+				<data>
+				AACQAA==
+				</data>
 				<key>framebuffer-patch-enable</key>
 				<integer>1</integer>
 				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
+				<data>
+				AAAwAQ==
+				</data>
 			</dict>
 		</dict>
 		<key>USB</key>
@@ -214,6 +226,8 @@
 			<key>AddClockID</key>
 			<true/>
 			<key>FixOwnership</key>
+			<true/>
+			<key>HighCurrent</key>
 			<true/>
 			<key>Inject</key>
 			<true/>
@@ -229,6 +243,8 @@
 	<dict>
 		<key>#ScreenResolution</key>
 		<string>1600x900</string>
+		<key>EmbeddedThemeType</key>
+		<string>Dark</string>
 		<key>Hide</key>
 		<array>
 			<string>Preboot</string>
@@ -249,6 +265,8 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
+		<key>Theme</key>
+		<string>christmas</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -335,46 +353,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SU9LaXQ=
-				</data>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelLpssI2C</string>
-				<key>Replace</key>
-				<data>
-				SU9LaXM=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SU9LaXQ=
-				</data>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelLpssI2CController</string>
-				<key>Replace</key>
-				<data>
-				SU9LaXM=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>IONVMeFamily: Ignore FLBAS bit:4 being set - for Plextor/LiteOn/Hynix</string>
 				<key>Disabled</key>
 				<false/>
@@ -385,7 +363,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>IONVMeFamily</string>
+				<string>com.apple.iokit.IONVMeFamily</string>
 				<key>Replace</key>
 				<data>
 				ikga9sEA
@@ -399,6 +377,8 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>ROM</key>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -413,7 +393,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C027297014NHWVPAD</string>
+		<string>C02747200QXHWVP1F</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -443,18 +423,18 @@
 		<key>ProductName</key>
 		<string>MacBookPro14,1</string>
 		<key>SerialNumber</key>
-		<string>C02V3047HV29</string>
+		<string>C02VQ5ZFHV29</string>
 		<key>SmUUID</key>
-		<string>FB994A03-F86E-4D91-BCF2-FDAB5F9BBA6A</string>
+		<string>B8ADFB32-9FB0-440F-A464-4341ED879C3B</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>CustomUUID</key>
-		<string>4282183B-AABC-5DEC-9468-E13BD11FE0DD</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
+		<key>InjectSystemID</key>
+		<true/>
 	</dict>
 </dict>
 </plist>

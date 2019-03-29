@@ -1,88 +1,96 @@
-5:233  0:243  Found UEFI Acpi 2.0 RSDP at 8AFFD014
-5:233  0:000  Saving ACPI tables from RSDP 8AFFD014 to EFI\CLOVER\ACPI\origin ...
-5:233  0:000   8AFFD014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
-5:233  0:000    (Xsdt: 8AFD5188, Rsdt: 8AFD50C4)
-5:233  0:000    8AFD5188: 'XSDT', 'SLIC-MPC', Rev: 1, Len: 332
-5:233  0:000    8AFD50C4: 'RSDT', 'SLIC-MPC', Rev: 1, Len: 184
-5:233  0:000    Tables in Xsdt: 37
-5:233  0:000    0. 8AFD9000: 'FACP', 'SLIC-MPC', Rev: 5, Len: 268
-5:233  0:000        (Dsdt: 8AFB2000, Facs: 8AF55000, XDsdt: 8AFB2000, XFacs: 0)
-5:233  0:000        8AFB2000: 'DSDT', 'SLIC-MPC', Rev: 2, Len: 139332
-5:237  0:003        8AF55000: 'FACS', Ver: 2, Len: 64
-5:237  0:000    1. 8AFFC000: 'UEFI', 'INSYDE', Rev: 1, Len: 566
-5:237  0:000    2. 8AFFB000: 'UEFI', 'INSYDE', Rev: 1, Len: 66
-5:237  0:000    3. 8AFFA000: 'IHIS', 'INSYDE', Rev: 1, Len: 56
-5:237  0:000    4. 8AFF3000: 'SSDT', 'INSYDE', Rev: 1, Len: 26020
-5:237  0:000    5. 8AFF2000: 'MSDM', 'SLIC-MPC', Rev: 3, Len: 85
-5:237  0:000    6. 8AFF1000: 'SSDT', 'INSYDE', Rev: 2, Len: 1219
-5:237  0:000    7. 8AFF0000: 'SSDT', 'INSYDE', Rev: 2, Len: 70
-5:237  0:000    8. 8AFEF000: 'TPM2', 'INSYDE', Rev: 3, Len: 52
-5:237  0:000    9. 8AFEB000: 'SSDT', 'INSYDE', Rev: 2, Len: 12402
-5:237  0:000    10. 8AFE0000: 'SSDT', 'INSYDE', Rev: 2, Len: 42573
-5:237  0:000    11. 8AFDF000: 'SSDT', 'INSYDE', Rev: 2, Len: 100
-5:237  0:000    12. 8AFDE000: 'SSDT', 'INSYDE', Rev: 2, Len: 2725
-5:237  0:000    13. 8AFDD000: 'ASF!', 'INSYDE', Rev: 32, Len: 165
-5:237  0:000    14. 8AFDC000: 'ASPT', 'INSYDE', Rev: 7, Len: 52
-5:237  0:000    15. 8AFDB000: 'BOOT', 'INSYDE', Rev: 1, Len: 40
-5:237  0:000    16. 8AFDA000: 'DBGP', 'SLIC-MPC', Rev: 1, Len: 52
-5:237  0:000    17. 8AFD8000: 'HPET', 'INSYDE', Rev: 1, Len: 56
-5:237  0:000    18. 8AFD7000: 'APIC', 'SLIC-MPC', Rev: 3, Len: 300
-5:237  0:000    19. 8AFD6000: 'MCFG', 'INSYDE', Rev: 1, Len: 60
-5:237  0:000    20. 8AFB1000: 'SSDT', 'INSYDE', Rev: 2, Len: 1303
-5:237  0:000    21. 8AFB0000: 'SSDT', 'INSYDE', Rev: 2, Len: 2427
-5:237  0:000    22. 8AFAF000: 'LPIT', 'INSYDE', Rev: 1, Len: 148
-5:237  0:000    23. 8AFAE000: 'WSMT', 'INSYDE', Rev: 1, Len: 40
-5:237  0:000    24. 8AFAD000: 'SSDT', 'INSYDE', Rev: 2, Len: 671
-5:237  0:000    25. 8AFAC000: 'SSDT', 'INSYDE', Rev: 1, Len: 838
-5:237  0:000    26. 8AFA8000: 'SSDT', 'INSYDE', Rev: 2, Len: 12290
-5:237  0:000    27. 8AFA7000: 'SSDT', 'INSYDE', Rev: 2, Len: 1310
-5:237  0:000    28. 8AFA6000: 'DBGP', 'SLIC-MPC', Rev: 1, Len: 52
-5:237  0:000    29. 8AFA5000: 'DBG2', 'INSYDE', Rev: 0, Len: 84
-5:237  0:000    30. 8AFA3000: 'SSDT', 'INSYDE', Rev: 2, Len: 4838
-5:237  0:000    31. 8AFA1000: 'SSDT', 'INSYDE', Rev: 2, Len: 6062
-5:237  0:000    32. 8AF9E000: 'DMAR', 'INSYDE', Rev: 1, Len: 168
-5:237  0:000    33. 8AFA0000: 'UEFI', 'INSYDE', Rev: 1, Len: 1594
-5:237  0:000    34. 8AF9F000: 'UEFI', 'INSYDE', Rev: 1, Len: 92
-5:237  0:000    35. 8AF9D000: 'FPDT', 'SLIC-MPC', Rev: 1, Len: 68
-5:237  0:000    36. 8AF9C000: 'BGRT', 'INSYDE', Rev: 1, Len: 56
-5:237  0:000    Tables in Rsdt: 37
-5:237  0:000    0. 8AFD9000: 'FACP', 'SLIC-MPC', Rev: 5, Len: 268
-5:237  0:000        (Dsdt: 8AFB2000, Facs: 8AF55000, XDsdt: 8AFB2000, XFacs: 0)
-5:237  0:000        8AFB2000: 'DSDT', 'SLIC-MPC', Rev: 2, Len: 139332
-5:241  0:003        8AF55000: 'FACS', Ver: 2, Len: 64
-5:241  0:000    1. 8AFFC000: 'UEFI', 'INSYDE', Rev: 1, Len: 566
-5:241  0:000    2. 8AFFB000: 'UEFI', 'INSYDE', Rev: 1, Len: 66
-5:241  0:000    3. 8AFFA000: 'IHIS', 'INSYDE', Rev: 1, Len: 56
-5:241  0:000    4. 8AFF3000: 'SSDT', 'INSYDE', Rev: 1, Len: 26020
-5:241  0:000    5. 8AFF2000: 'MSDM', 'SLIC-MPC', Rev: 3, Len: 85
-5:241  0:000    6. 8AFF1000: 'SSDT', 'INSYDE', Rev: 2, Len: 1219
-5:241  0:000    7. 8AFF0000: 'SSDT', 'INSYDE', Rev: 2, Len: 70
-5:241  0:000    8. 8AFEF000: 'TPM2', 'INSYDE', Rev: 3, Len: 52
-5:241  0:000    9. 8AFEB000: 'SSDT', 'INSYDE', Rev: 2, Len: 12402
-5:241  0:000    10. 8AFE0000: 'SSDT', 'INSYDE', Rev: 2, Len: 42573
-5:241  0:000    11. 8AFDF000: 'SSDT', 'INSYDE', Rev: 2, Len: 100
-5:241  0:000    12. 8AFDE000: 'SSDT', 'INSYDE', Rev: 2, Len: 2725
-5:241  0:000    13. 8AFDD000: 'ASF!', 'INSYDE', Rev: 32, Len: 165
-5:241  0:000    14. 8AFDC000: 'ASPT', 'INSYDE', Rev: 7, Len: 52
-5:241  0:000    15. 8AFDB000: 'BOOT', 'INSYDE', Rev: 1, Len: 40
-5:241  0:000    16. 8AFDA000: 'DBGP', 'SLIC-MPC', Rev: 1, Len: 52
-5:241  0:000    17. 8AFD8000: 'HPET', 'INSYDE', Rev: 1, Len: 56
-5:241  0:000    18. 8AFD7000: 'APIC', 'SLIC-MPC', Rev: 3, Len: 300
-5:241  0:000    19. 8AFD6000: 'MCFG', 'INSYDE', Rev: 1, Len: 60
-5:241  0:000    20. 8AFB1000: 'SSDT', 'INSYDE', Rev: 2, Len: 1303
-5:241  0:000    21. 8AFB0000: 'SSDT', 'INSYDE', Rev: 2, Len: 2427
-5:241  0:000    22. 8AFAF000: 'LPIT', 'INSYDE', Rev: 1, Len: 148
-5:241  0:000    23. 8AFAE000: 'WSMT', 'INSYDE', Rev: 1, Len: 40
-5:241  0:000    24. 8AFAD000: 'SSDT', 'INSYDE', Rev: 2, Len: 671
-5:241  0:000    25. 8AFAC000: 'SSDT', 'INSYDE', Rev: 1, Len: 838
-5:241  0:000    26. 8AFA8000: 'SSDT', 'INSYDE', Rev: 2, Len: 12290
-5:241  0:000    27. 8AFA7000: 'SSDT', 'INSYDE', Rev: 2, Len: 1310
-5:241  0:000    28. 8AFA6000: 'DBGP', 'SLIC-MPC', Rev: 1, Len: 52
-5:241  0:000    29. 8AFA5000: 'DBG2', 'INSYDE', Rev: 0, Len: 84
-5:241  0:000    30. 8AFA3000: 'SSDT', 'INSYDE', Rev: 2, Len: 4838
-5:241  0:000    31. 8AFA1000: 'SSDT', 'INSYDE', Rev: 2, Len: 6062
-5:241  0:000    32. 8AF9E000: 'DMAR', 'INSYDE', Rev: 1, Len: 168
-5:241  0:000    33. 8AFA0000: 'UEFI', 'INSYDE', Rev: 1, Len: 1594
-5:241  0:000    34. 8AF9F000: 'UEFI', 'INSYDE', Rev: 1, Len: 92
-5:241  0:000    35. 8AF9D000: 'FPDT', 'SLIC-MPC', Rev: 1, Len: 68
-5:241  0:000    36. 8AF9C000: 'BGRT', 'INSYDE', Rev: 1, Len: 56
+8:324  2:205  Found UEFI Acpi 2.0 RSDP at 8AFFD014
+8:324  0:000  Saving ACPI tables from RSDP 8AFFD014 to EFI\CLOVER\ACPI\origin ...
+8:324  0:000   8AFFD014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+8:341  0:017    (Xsdt: 8AFD5188, Rsdt: 8AFD50C4)
+8:341  0:000    8AFD5188: 'XSDT', 'SLIC-MPC', Rev: 1, Len: 332 -> XSDT.aml
+8:345  0:003    8AFD50C4: 'RSDT', 'SLIC-MPC', Rev: 1, Len: 184 -> RSDT.aml
+8:349  0:003    Tables in Xsdt: 37
+8:349  0:000    0. 8AFD9000: 'FACP', 'SLIC-MPC', Rev: 5, Len: 268 -> FACP.aml
+8:352  0:003        (Dsdt: 8AFB2000, Facs: 8AF55000, XDsdt: 8AFB2000, XFacs: 0)
+8:352  0:000        8AFB2000: 'DSDT', 'SLIC-MPC', Rev: 2, Len: 139332 -> DSDT.aml
+8:361  0:008        8AF55000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+8:365  0:003    1. 8AFFC000: 'UEFI', 'INSYDE', Rev: 1, Len: 566 -> UEFI.aml
+8:369  0:004    2. 8AFFB000: 'UEFI', 'INSYDE', Rev: 1, Len: 66 -> UEFI.aml
+8:373  0:004    3. 8AFFA000: 'IHIS', 'INSYDE', Rev: 1, Len: 56 -> IHIS.aml
+8:377  0:003    4. 8AFF3000: 'SSDT', 'INSYDE', Rev: 1, Len: 26020 -> SSDT-0-INSYDE.aml
+8:383  0:005    5. 8AFF2000: 'MSDM', 'SLIC-MPC', Rev: 3, Len: 85 -> MSDM.aml
+8:387  0:004    6. 8AFF1000: 'SSDT', 'INSYDE', Rev: 2, Len: 1219 -> SSDT-1-INSYDE.aml
+8:391  0:003    7. 8AFF0000: 'SSDT', 'INSYDE', Rev: 2, Len: 70 -> SSDT-2-INSYDE.aml
+8:395  0:003    8. 8AFEF000: 'TPM2', 'INSYDE', Rev: 3, Len: 52 -> TPM2.aml
+8:398  0:003    9. 8AFEB000: 'SSDT', 'INSYDE', Rev: 2, Len: 12402 -> SSDT-3-INSYDE.aml
+8:403  0:004    10. 8AFE0000: 'SSDT', 'INSYDE', Rev: 2, Len: 42573 -> SSDT-4-INSYDE.aml
+8:408  0:005    11. 8AFDF000: 'SSDT', 'INSYDE', Rev: 2, Len: 100 -> SSDT-5-INSYDE.aml
+8:412  0:004    12. 8AFDE000: 'SSDT', 'INSYDE', Rev: 2, Len: 2725 -> SSDT-6-INSYDE.aml
+8:417  0:004    13. 8AFDD000: 'ASF!', 'INSYDE', Rev: 32, Len: 165 -> ASF!.aml
+8:421  0:004    14. 8AFDC000: 'ASPT', 'INSYDE', Rev: 7, Len: 52 -> ASPT.aml
+8:425  0:003    15. 8AFDB000: 'BOOT', 'INSYDE', Rev: 1, Len: 40 -> BOOT.aml
+8:428  0:003    16. 8AFDA000: 'DBGP', 'SLIC-MPC', Rev: 1, Len: 52 -> DBGP.aml
+8:432  0:003    17. 8AFD8000: 'HPET', 'INSYDE', Rev: 1, Len: 56 -> HPET.aml
+8:435  0:003    18. 8AFD7000: 'APIC', 'SLIC-MPC', Rev: 3, Len: 300 -> APIC.aml
+8:439  0:003    19. 8AFD6000: 'MCFG', 'INSYDE', Rev: 1, Len: 60 -> MCFG.aml
+8:443  0:003    20. 8AFB1000: 'SSDT', 'INSYDE', Rev: 2, Len: 1303 -> SSDT-7-INSYDE.aml
+8:446  0:003    21. 8AFB0000: 'SSDT', 'INSYDE', Rev: 2, Len: 2427 -> SSDT-8-INSYDE.aml
+8:451  0:004    22. 8AFAF000: 'LPIT', 'INSYDE', Rev: 1, Len: 148 -> LPIT.aml
+8:456  0:005    23. 8AFAE000: 'WSMT', 'INSYDE', Rev: 1, Len: 40 -> WSMT.aml
+8:460  0:003    24. 8AFAD000: 'SSDT', 'INSYDE', Rev: 2, Len: 671 -> SSDT-9-INSYDE.aml
+8:463  0:003    25. 8AFAC000: 'SSDT', 'INSYDE', Rev: 1, Len: 838 -> SSDT-10-INSYDE.aml
+8:467  0:003    26. 8AFA8000: 'SSDT', 'INSYDE', Rev: 2, Len: 12290 -> SSDT-11-INSYDE.aml
+8:471  0:003    27. 8AFA7000: 'SSDT', 'INSYDE', Rev: 2, Len: 1310 -> SSDT-12-INSYDE.aml
+8:475  0:003    28. 8AFA6000: 'DBGP', 'SLIC-MPC', Rev: 1, Len: 52 -> DBGP.aml
+8:479  0:003    29. 8AFA5000: 'DBG2', 'INSYDE', Rev: 0, Len: 84 -> DBG2.aml
+8:483  0:004    30. 8AFA3000: 'SSDT', 'INSYDE', Rev: 2, Len: 4838 -> SSDT-13-INSYDE.aml
+8:487  0:004    31. 8AFA1000: 'SSDT', 'INSYDE', Rev: 2, Len: 6062 -> SSDT-14-INSYDE.aml (Found hidden SSDT 7 pcs)
+8:490  0:003        * 8A708018: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1419  53 53 44 54 8B 05 00 00 02 63 50 6D 52 65 66 00 Internal length = 1419 -> SSDT-x14_0-Cpu0Ist.aml
+8:494  0:003        * 8A706018: 'SSDT', 'ApIst', Rev: 2, Len: 3348  53 53 44 54 14 0D 00 00 02 2A 50 6D 52 65 66 00 Internal length = 3348 -> SSDT-x14_1-ApIst.aml
+8:497  0:003        * 8A707898: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1023  53 53 44 54 FF 03 00 00 02 11 50 6D 52 65 66 00 Internal length = 1023 -> SSDT-x14_2-Cpu0Cst.aml
+8:501  0:003        * 8A708898: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 93 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x14_3-ApCst.aml
+8:506  0:004        * 8A708DD8: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 186  53 53 44 54 BA 00 00 00 02 7D 50 6D 52 65 66 00 Internal length = 186 -> SSDT-x14_4-Cpu0Hwp.aml
+8:509  0:003        * 8A885418: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 80 50 6D 52 65 66 00 Internal length = 791 -> SSDT-x14_5-ApHwp.aml
+8:513  0:003        * 8A707018: 'SSDT', 'HwpLvt', Rev: 2, Len: 1576  53 53 44 54 28 06 00 00 02 85 50 6D 52 65 66 00 Internal length = 1576 -> SSDT-x14_6-HwpLvt.aml
+8:519  0:006  
+8:519  0:000    32. 8AFA0000: 'UEFI', 'INSYDE', Rev: 1, Len: 1594 -> UEFI.aml
+8:526  0:006    33. 8AF9F000: 'UEFI', 'INSYDE', Rev: 1, Len: 92 -> UEFI.aml
+8:530  0:004    34. 8AF9E000: 'DMAR', 'INSYDE', Rev: 1, Len: 168 -> DMAR.aml
+8:533  0:003    35. 8AF9D000: 'FPDT', 'SLIC-MPC', Rev: 1, Len: 68 -> FPDT.aml
+8:537  0:003    36. 8AF9C000: 'BGRT', 'INSYDE', Rev: 1, Len: 56 -> BGRT.aml
+8:541  0:003    Tables in Rsdt: 37
+8:541  0:000    0. 8AFD9000: 'FACP', 'SLIC-MPC', Rev: 5, Len: 268
+8:541  0:000        (Dsdt: 8AFB2000, Facs: 8AF55000, XDsdt: 8AFB2000, XFacs: 0)
+8:541  0:000        8AFB2000: 'DSDT', 'SLIC-MPC', Rev: 2, Len: 139332
+8:545  0:003        8AF55000: 'FACS', Ver: 2, Len: 64
+8:545  0:000    1. 8AFFC000: 'UEFI', 'INSYDE', Rev: 1, Len: 566
+8:545  0:000    2. 8AFFB000: 'UEFI', 'INSYDE', Rev: 1, Len: 66
+8:545  0:000    3. 8AFFA000: 'IHIS', 'INSYDE', Rev: 1, Len: 56
+8:545  0:000    4. 8AFF3000: 'SSDT', 'INSYDE', Rev: 1, Len: 26020
+8:545  0:000    5. 8AFF2000: 'MSDM', 'SLIC-MPC', Rev: 3, Len: 85
+8:545  0:000    6. 8AFF1000: 'SSDT', 'INSYDE', Rev: 2, Len: 1219
+8:545  0:000    7. 8AFF0000: 'SSDT', 'INSYDE', Rev: 2, Len: 70
+8:545  0:000    8. 8AFEF000: 'TPM2', 'INSYDE', Rev: 3, Len: 52
+8:545  0:000    9. 8AFEB000: 'SSDT', 'INSYDE', Rev: 2, Len: 12402
+8:545  0:000    10. 8AFE0000: 'SSDT', 'INSYDE', Rev: 2, Len: 42573
+8:545  0:000    11. 8AFDF000: 'SSDT', 'INSYDE', Rev: 2, Len: 100
+8:545  0:000    12. 8AFDE000: 'SSDT', 'INSYDE', Rev: 2, Len: 2725
+8:545  0:000    13. 8AFDD000: 'ASF!', 'INSYDE', Rev: 32, Len: 165
+8:545  0:000    14. 8AFDC000: 'ASPT', 'INSYDE', Rev: 7, Len: 52
+8:545  0:000    15. 8AFDB000: 'BOOT', 'INSYDE', Rev: 1, Len: 40
+8:545  0:000    16. 8AFDA000: 'DBGP', 'SLIC-MPC', Rev: 1, Len: 52
+8:545  0:000    17. 8AFD8000: 'HPET', 'INSYDE', Rev: 1, Len: 56
+8:545  0:000    18. 8AFD7000: 'APIC', 'SLIC-MPC', Rev: 3, Len: 300
+8:545  0:000    19. 8AFD6000: 'MCFG', 'INSYDE', Rev: 1, Len: 60
+8:545  0:000    20. 8AFB1000: 'SSDT', 'INSYDE', Rev: 2, Len: 1303
+8:545  0:000    21. 8AFB0000: 'SSDT', 'INSYDE', Rev: 2, Len: 2427
+8:545  0:000    22. 8AFAF000: 'LPIT', 'INSYDE', Rev: 1, Len: 148
+8:545  0:000    23. 8AFAE000: 'WSMT', 'INSYDE', Rev: 1, Len: 40
+8:545  0:000    24. 8AFAD000: 'SSDT', 'INSYDE', Rev: 2, Len: 671
+8:545  0:000    25. 8AFAC000: 'SSDT', 'INSYDE', Rev: 1, Len: 838
+8:545  0:000    26. 8AFA8000: 'SSDT', 'INSYDE', Rev: 2, Len: 12290
+8:545  0:000    27. 8AFA7000: 'SSDT', 'INSYDE', Rev: 2, Len: 1310
+8:545  0:000    28. 8AFA6000: 'DBGP', 'SLIC-MPC', Rev: 1, Len: 52
+8:545  0:000    29. 8AFA5000: 'DBG2', 'INSYDE', Rev: 0, Len: 84
+8:545  0:000    30. 8AFA3000: 'SSDT', 'INSYDE', Rev: 2, Len: 4838
+8:545  0:000    31. 8AFA1000: 'SSDT', 'INSYDE', Rev: 2, Len: 6062
+8:545  0:000    32. 8AFA0000: 'UEFI', 'INSYDE', Rev: 1, Len: 1594
+8:545  0:000    33. 8AF9F000: 'UEFI', 'INSYDE', Rev: 1, Len: 92
+8:545  0:000    34. 8AF9E000: 'DMAR', 'INSYDE', Rev: 1, Len: 168
+8:545  0:000    35. 8AF9D000: 'FPDT', 'SLIC-MPC', Rev: 1, Len: 68
+8:545  0:000    36. 8AF9C000: 'BGRT', 'INSYDE', Rev: 1, Len: 56
